@@ -1,0 +1,24 @@
+### Get all posts
+GET http://localhost:4000/posts
+content-type: application/json
+
+###  create post
+POST http://localhost:4000/posts
+content-type: application/json
+
+{
+    "title": "second post"
+}
+
+### get all comments by post id
+
+GET http://localhost:4001/posts/6a3e805e/comments
+
+### Create comment
+
+POST http://localhost:4001/posts/6a3e805e/comments
+content-type: application/json
+
+{
+    "content": "I am a comment"
+}
